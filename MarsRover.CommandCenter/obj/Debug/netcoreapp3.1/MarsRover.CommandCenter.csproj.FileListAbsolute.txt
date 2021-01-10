@@ -1,0 +1,11 @@
+C:\Users\ES\source\repos\MarsRover\MarsRover.CommandCenter\bin\Debug\netcoreapp3.1\MarsRover.CommandCenter.deps.json
+C:\Users\ES\source\repos\MarsRover\MarsRover.CommandCenter\bin\Debug\netcoreapp3.1\MarsRover.CommandCenter.dll
+C:\Users\ES\source\repos\MarsRover\MarsRover.CommandCenter\bin\Debug\netcoreapp3.1\MarsRover.CommandCenter.pdb
+C:\Users\ES\source\repos\MarsRover\MarsRover.CommandCenter\bin\Debug\netcoreapp3.1\MarsRover.Service.dll
+C:\Users\ES\source\repos\MarsRover\MarsRover.CommandCenter\bin\Debug\netcoreapp3.1\MarsRover.Service.pdb
+C:\Users\ES\source\repos\MarsRover\MarsRover.CommandCenter\obj\Debug\netcoreapp3.1\MarsRover.CommandCenter.csprojAssemblyReference.cache
+C:\Users\ES\source\repos\MarsRover\MarsRover.CommandCenter\obj\Debug\netcoreapp3.1\MarsRover.CommandCenter.AssemblyInfoInputs.cache
+C:\Users\ES\source\repos\MarsRover\MarsRover.CommandCenter\obj\Debug\netcoreapp3.1\MarsRover.CommandCenter.AssemblyInfo.cs
+C:\Users\ES\source\repos\MarsRover\MarsRover.CommandCenter\obj\Debug\netcoreapp3.1\MarsRover.CommandCenter.csproj.CopyComplete
+C:\Users\ES\source\repos\MarsRover\MarsRover.CommandCenter\obj\Debug\netcoreapp3.1\MarsRover.CommandCenter.dll
+C:\Users\ES\source\repos\MarsRover\MarsRover.CommandCenter\obj\Debug\netcoreapp3.1\MarsRover.CommandCenter.pdb
