@@ -1,6 +1,5 @@
 ﻿using MarsRover.Service.Constants;
 using MarsRover.Service.Plateaus;
-using MarsRover.Service.Rovers;
 
 namespace MarsRover.Service
 {
@@ -8,7 +7,7 @@ namespace MarsRover.Service
     {
         private IRover _rover;
 
-        public IPlateau _plateau;
+        private IPlateau _plateau;
 
         public RoverService(IRover rover, IPlateau plateau)
         {
@@ -18,26 +17,10 @@ namespace MarsRover.Service
 
         public void Action(Movement movement)
         {
-            switch (movement)
-            {
-                case Movement.M:
-                    (_rover as IMove).Move();
+            _rover.Action(movement);
 
-                    if (!isInRegion())
-                        throw new System.Exception("Rover went out of area.");
-                    break;
-
-                case Movement.L:
-                    (_rover as IMove).Left();
-                    break;
-
-                case Movement.R:
-                    (_rover as IMove).Right();
-                    break;
-
-                default:
-                    throw new System.Exception("Bad Command");
-            }
+            if (!isInRegion())
+                throw new System.Exception("rover is not in region!");
         }
 
         public void DeployRover(int x, int y, Direction direction)
@@ -53,7 +36,7 @@ namespace MarsRover.Service
             _plateau.Height = height;
         }
 
-        public string ReportLocation()
+        public string ReportRover()
         {
             return _rover.ToString();
         }

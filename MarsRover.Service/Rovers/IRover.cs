@@ -7,5 +7,6 @@ namespace MarsRover.Service
     {
         Direction Direction { get; set; }
         Cordinate Position { get; set; }
+        void Action(Movement movement);
     }
 }

@@ -1,11 +1,10 @@
 ﻿using MarsRover.Service.Constants;
 using MarsRover.Service.Entities;
-using MarsRover.Service.Rovers;
 using System;
 
 namespace MarsRover.Service
 {
-    public class MarsRover : IRover, IMove
+    public class MarsRover : IRover
     {
         public Direction Direction { get; set; }
 
@@ -20,8 +19,26 @@ namespace MarsRover.Service
             Position.Y = y;
             Direction = direction;
         }
-       
-        public void Move()
+
+        public void Action(Movement movement)
+        {
+            switch (movement)
+            {
+                case Movement.M:
+                    move();
+                    break;
+                case Movement.L:
+                    left();
+                    break;
+                case Movement.R:
+                    right();
+                    break;
+                default:
+                    throw new Exception("Bad command");
+            }
+        }
+
+        private void move()
         {
             switch (Direction)
             {
@@ -42,7 +59,7 @@ namespace MarsRover.Service
             }
         }
 
-        public void Left()
+        private void left()
         {
             switch (Direction)
             {
@@ -63,7 +80,7 @@ namespace MarsRover.Service
             }
         }
 
-        public void Right()
+        private void right()
         {
             switch (Direction)
             {

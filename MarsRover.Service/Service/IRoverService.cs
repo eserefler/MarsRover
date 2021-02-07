@@ -7,7 +7,7 @@ namespace MarsRover.Service
         void Action(Movement movement);
         void SizePlateau(int width, int height);
         void DeployRover(int x, int y, Direction direction);
-        string ReportLocation();
+        string ReportRover();
         string ReportPlateau();
     }
 }

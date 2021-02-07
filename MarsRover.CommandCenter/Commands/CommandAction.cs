@@ -18,7 +18,7 @@ namespace MarsRover.CommandCenter.Commands
             foreach (var movement in _movementArr)
                 _roverService.Action(getMovement(movement));
 
-            Console.WriteLine(_roverService.ReportLocation());
+            Console.WriteLine(_roverService.ReportRover());
         }
 
         public void ParseCommand(string command)

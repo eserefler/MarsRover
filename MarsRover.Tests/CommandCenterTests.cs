@@ -41,7 +41,7 @@ namespace MarsRover.Tests
             // act
             var roverService = DependencyHelper.GetService<IRoverService>();
             CommandProvider.SendCommand(command);
-            var result = roverService.ReportLocation();
+            var result = roverService.ReportRover();
 
             // asset
             string expected = $"{x} {y} {direction}";
@@ -69,7 +69,7 @@ namespace MarsRover.Tests
             CommandProvider.SendCommand(commandPlateau);
             CommandProvider.SendCommand(commandRover);
             CommandProvider.SendCommand(commandAction);
-            var result = roverService.ReportLocation();
+            var result = roverService.ReportRover();
 
             // asset
             string expected = "5 1 E";
